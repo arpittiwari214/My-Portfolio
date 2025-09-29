@@ -55,12 +55,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 body.loaded .preloader {
@@ -153,21 +149,10 @@ body.loaded .preloader {
   height: 24px;
 }
 
-.theme-toggle .sun {
-  display: none;
-}
-
-.theme-toggle .moon {
-  display: block;
-}
-
-body.light-mode .theme-toggle .sun {
-  display: block;
-}
-
-body.light-mode .theme-toggle .moon {
-  display: none;
-}
+.theme-toggle .sun { display: none; }
+.theme-toggle .moon { display: block; }
+body.light-mode .theme-toggle .sun { display: block; }
+body.light-mode .theme-toggle .moon { display: none; }
 
 .nav-toggle {
   display: none;
@@ -197,25 +182,12 @@ body.light-mode .theme-toggle .moon {
   transition: all 0.2s;
 }
 
-.hamburger::before {
-  top: -8px;
-}
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
 
-.hamburger::after {
-  top: 8px;
-}
-
-body.nav-open .hamburger {
-  background: transparent;
-}
-
-body.nav-open .hamburger::before {
-  transform: rotate(45deg) translate(5px, 6px);
-}
-
-body.nav-open .hamburger::after {
-  transform: rotate(-45deg) translate(5px, -6px);
-}
+body.nav-open .hamburger { background: transparent; }
+body.nav-open .hamburger::before { transform: rotate(45deg) translate(5px, 6px); }
+body.nav-open .hamburger::after { transform: rotate(-45deg) translate(5px, -6px); }
 
 /* --- HERO SECTION --- */
 .hero-container {
@@ -317,6 +289,21 @@ body.nav-open .hamburger::after {
   line-height: 1.6;
 }
 
+/* --- ABOUT ME SECTION --- */
+.about-content p {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me h2 {
+    text-align: center;
+}
+
 /* --- EXPERIENCE SECTION --- */
 .timeline {
     display: flex;
@@ -345,34 +332,55 @@ body.nav-open .hamburger::after {
     margin-bottom: 0.5rem;
 }
 
-
-/* --- SKILLS SECTION --- */
+/* --- SKILLS SECTION (Categorized with Icons) --- */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .skill-category {
-  background: var(--bg-card);
-  border: 1px solid var(--glass);
-  padding: 1.5rem;
-  border-radius: var(--radius);
+    background: var(--bg-card);
+    border: 1px solid var(--glass);
+    padding: 1.5rem;
+    border-radius: var(--radius);
 }
 
 .skill-category h3 {
-  font-size: 1.2rem;
-  color: var(--accent1);
-  margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--accent1);
+    margin-bottom: 1rem;
 }
 
-.skill-category ul {
-  list-style: none;
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.skill-category li {
-  margin-bottom: 0.5rem;
-  color: var(--muted);
+.skill-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    background: var(--glass);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.skill-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-list li:hover .skill-icon {
+    transform: rotate(15deg);
 }
 
 /* --- PROJECTS & MODAL --- */
@@ -477,6 +485,7 @@ body.nav-open .hamburger::after {
     backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     transform: translateX(100%);
     transition: transform 0.3s ease-out;
   }
@@ -490,16 +499,17 @@ body.nav-open .hamburger::after {
     text-align: center;
   }
 
-  .nav .resume-btn {
-    margin-top: 1.5rem;
-  }
-
   .nav-toggle {
     display: block;
   }
 
   .form-row {
     flex-direction: column;
+  }
+  
+  .nav .resume-btn {
+      order: -1;
+      margin-bottom: 1.5rem;
   }
 }
 

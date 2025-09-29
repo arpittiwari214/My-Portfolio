@@ -100,18 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ease: "power3.out",
         });
     });
-
-    gsap.from(".skill-category", {
-        scrollTrigger: {
-            trigger: "#skills",
-            start: "top 70%",
-        },
-        opacity: 0,
-        y: 40,
-        duration: 0.8,
-        ease: "power3.out",
-        stagger: 0.2
-    });
+    
+    // --- ICON HOVER ANIMATION (No changes needed, handled by CSS) ---
 
     // --- MODAL LOGIC ---
     const projectCards = document.querySelectorAll('.project-card');
