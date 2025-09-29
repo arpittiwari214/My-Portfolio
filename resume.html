@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arpit Tiwari — Frontend & AI Developer</title>
+  
+  <meta name="description" content="Arpit Tiwari's portfolio. A frontend developer specializing in modern web experiences and AI-powered products using React, JavaScript, and Python.">
+  
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="resume.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="preloader">
+      <div class="preloader-logo">AT</div>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-circle"></div>
+
+  <header class="header">
+      <div class="logo">Arpit Tiwari</div>
+      <nav class="nav">
+          <ul>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#experience" class="nav-link">Experience</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" class="theme-toggle magnetic" aria-label="Toggle theme">
+              <svg class="sun" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.591a.75.75 0 11-1.06-1.06l1.591-1.591a.75.75 0 011.06 0zm-11.45 11.45a.75.75 0 011.06 0l1.591 1.591a.75.75 0 01-1.06 1.06l-1.591-1.591a.75.75 0 010-1.06zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM3.75 12a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM6.106 18.894a.75.75 0 011.06 0l1.591-1.591a.75.75 0 011.06 1.06l-1.591 1.591a.75.75 0 01-1.06 0zM18.894 7.166a.75.75 0 01-1.06-1.06l1.591-1.591a.75.75 0 111.06 1.06l-1.591 1.591z"/></svg>
+              <svg class="moon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 004.472-.69a.75.75 0 01.82.162l.805.806a.75.75 0 01-.162.82a10.48 10.48 0 01-5.596 3.053A10.5 10.5 0 019 19.5a10.5 10.5 0 01-10.282-9.972A10.48 10.48 0 011.718 3.99l.806-.805a.75.75 0 01.82.162z" clip-rule="evenodd" /></svg>
+          </button>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation"><span class="hamburger"></span></button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-container" id="about">
+      <div class="hero-content">
+        <div class="hero-image magnetic">
+            <img src="assets/profile.jpg" alt="Arpit Tiwari">
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title"><span class="line">Hello — I'm Arpit Tiwari</span></h1>
+          <p class="subtitle"><span class="line">I design & build modern web experiences and AI-powered products.</span></p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn magnetic">See my work</a>
+            <a href="#contact" class="btn outline magnetic">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="experience" class="content-section reveal">
+        <h2>Experience & Activities</h2>
+        <div class="timeline">
+            <div class="tl-item">
+              <h3>Web Development Intern</h3>
+              <p class="muted">Brainwave Matrix Solutions | Jun 2024 – Sep 2024</p>
+              <ul>
+                  <li>Engineered and optimized 4+ responsive web application features using HTML, CSS, and JavaScript, improving page load times by 15%.</li>
+                  <li>Collaborated in an Agile team to deliver scalable frontend solutions, contributing to a 10% increase in user engagement metrics.</li>
+              </ul>
+            </div>
+            <div class="tl-item">
+                <h3>Hackathon Participant (College Finalist)</h3>
+                <p class="muted">Smart India Hackathon (SIH) | 2024</p>
+                <ul>
+                    <li>Led a team to develop an innovative solution for a real-world problem statement, reaching the college-level finals.</li>
+                    <li>Designed and prototyped the UI/UX in Figma and contributed to the frontend development of the proposed application.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section reveal">
+        <h2>My Toolkit</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul><li>C++</li><li>Python</li><li>JavaScript (ES6+)</li></ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul><li>HTML5 & CSS3</li><li>React</li><li>GSAP</li><li>Three.js</li></ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & DB</h3>
+                <ul><li>Firebase</li><li>MongoDB</li><li>PostgreSQL</li></ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & AI</h3>
+                <ul><li>Git & GitHub</li><li>Figma</li><li>n8n</li><li>OpenAI API</li></ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="content-section reveal">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <div class="project-card magnetic" data-modal-target="modal-bade-bhaiya">
+          <h3>Bade Bhaiya</h3>
+          <p>AI-powered Career Guidance Platform</p>
+          <span class="project-cta">View Case Study →</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section reveal">
+      <h2>Get In Touch</h2>
+      <p class="muted">Have a question or a project in mind? Let's connect.</p>
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn magnetic">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer"><p>© 2025 Arpit Tiwari</p></footer>
+  
+  <a id="back-to-top" class="back-to-top magnetic" href="#about" aria-label="Back to top">↑</a>
+
+  <div class="modal" id="modal-bade-bhaiya">
+      <div class="modal-content">
+          <button class="modal-close magnetic">&times;</button>
+          <h2>Case Study: Bade Bhaiya</h2>
+          <p class="muted">An AI-powered career guidance platform.</p>
+          <div class="case-study-section">
+              <h4>The Problem</h4>
+              <p>Many students struggle to choose a career path due to a lack of personalized guidance. The goal was to create a tool that could offer intelligent, data-driven career recommendations.</p>
+          </div>
+          <div class="case-study-section">
+              <h4>My Role & Process</h4>
+              <p>As the lead developer, I was responsible for the full-stack development and UI/UX design. The process involved initial wireframing in Figma, developing a component-based frontend in React, and engineering the backend recommendation logic in Python.</p>
+          </div>
+          <div class="case-study-section">
+              <h4>The Outcome</h4>
+              <p>The final product is a platform that matches students to careers with over <strong>90% accuracy</strong> based on quiz data. This project solidified my skills in full-stack development and practical AI implementation.</p>
+          </div>
+          <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="btn magnetic">Live Demo ↗</a>
+              <a href="https://github.com/arpittiwari214" target="_blank" rel="noopener" class="btn outline magnetic">View Code ↗</a>
+          </div>
+      </div>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="importmap">{"imports": {"three": "https://unpkg.com/three@0.158.0/build/three.module.js"}}</script>
+  
+  <script type="module" src="resume.js"></script>
+</body>
+</html>
